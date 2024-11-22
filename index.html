@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h1 id="title">Cadastro de clientes</h1>
+      <p id="subtitle">Complete suas informações</p>
+      <br />
+    </div>
+
+    <form>
+      <fieldset class="form-fieldset">
+        <div class="form">
+          <label for="nome"><strong>Nome:</strong></label>
+          <input
+            type="text"
+            name="nome"
+            id="nome"
+            placeholder="Digite o nome"
+            required
+          />
+        </div>
+
+        <div class="form">
+          <label for="sobrenome"><strong>Sobrenome:</strong></label>
+          <input
+            type="text"
+            name="sobrenome"
+            id="sobrenome"
+            placeholder="Digite o sobrenome"
+            required
+          />
+        </div>
+      </fieldset>
+      <div class="form">
+        <label for="email"><strong>Email:</strong></label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Digite o E-mail"
+          required
+        />
+      </div>
+
+      <div class="form">
+        <label><strong>Qual atendimento deseja?</strong></label>
+        <label>
+          <input type="radio" name="corte" value="corte" />Corte de cabelo
+        </label>
+        <label>
+          <input type="radio" name="corteBarba" value="corteBarba" />Corte de
+          cabelo + Barba
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="atendimentoPesonalizado"
+            value="atendimentoPesonalizado"
+          />Atendimento Pesonalizado
+        </label>
+      </div>
+      <div class="form">
+        <label for="atendente"><strong>Atendente:</strong></label>
+        <select name="atendente" id="atendente">
+          <option selected disabled value="">Selecione</option>
+          <option>Pedro</option>
+          <option>Roberto</option>
+          <option>Lucas</option>
+        </select>
+      </div>
+
+      <fieldset class="form-fieldset">
+        <div class="checkbox">
+          <label
+            ><strong>Selecione o local que deseja ser atendido:</strong></label
+          ><br />
+          <input type="checkbox" /><label>Em casa</label>
+          <input type="checkbox" /><label>Vila Mariana</label>
+          <input type="checkbox" /><label>Itaim Bibi</label>
+          <input type="checkbox" /><label>Paulista</label>
+          <input type="checkbox" /><label>Interlagos</label>
+        </div>
+      </fieldset>
+      <div class="form">
+        <label
+          ><strong
+            >Conte um pouco sobre como deseja ser atendido:</strong
+          ></label
+        >
+        <textarea row="6" style="width: 26em" id="experiencia"></textarea>
+      </div>
+
+      <button class="button" type="submit">Enviar</button>
+    </form>
+  </body>
+</html>
